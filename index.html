@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kerstbomen Website</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <h1> Hudson's Boom</h1>
+  </header>
+
+  <main>
+    <section id="boomversieringen">
+
+
+      <div class="column">
+        <h1> Versieringen </h1>
+
+        <h2> Boomkleur </h2>
+        <button id="groeneboom" data-id="boom-groen" class="boombutton" data-doelimgsrc="images/boomgroen.png"></button>
+        <button id="blauweboom" data-id="boom-blauw" class="boombutton" data-doelimgsrc="images/boomblauw.png"></button>
+        <button id="rodeboom" data-id="boom-rood" class="boombutton" data-doelimgsrc="images/boomrood.png"></button>
+
+        <h2> Piek </h2>
+        <button id="gelepiek" class="boombutton" data-id="piek-geel" data-doelimgsrc="images/gelepiek.png"></button>
+        <button id="rodepiek" class="boombutton" data-id="piek-donkerrood" data-doelimgsrc="images/piekdonkerrood.png"></button>
+        <button id="zilverenpiek" class="boombutton" data-id="piek-grijs" data-doelimgsrc="images/piekgrijs.png"></button>
+        <button id="geenpiek" class="boombutton" data-id="piek-geen"></button>
+
+        <h2> Kerstballen </h2>
+        <button id="rozebal" class="boombutton" data-id="ballen-roze" data-doelimgsrc="images/ballenroze.png"></button>
+        <button id="groenebal" class="boombutton" data-id="ballen-blauw" data-doelimgsrc="images/ballenblauw.png"></button>
+        <button id="paarsebal" class="boombutton" data-id="ballen-paars" data-doelimgsrc="images/ballenpaars.png"></button>
+        <button id="geenbal" class="boombutton" data-id="ballen-geen"></button>
+
+        <h2> Kerstlichten </h2>
+        <button id="rodelichten" class="boombutton" data-id="lichtjes-rode" data-doelimgsrc="images/rodelichtjes.png"></button>
+        <button id="wittelichten" class="boombutton" data-id="lichtjes-grijze" data-doelimgsrc="images/grijzelichtjes.png"></button>
+        <button id="blauwelichten" class="boombutton" data-id="lichtjes-blauwe" data-doelimgsrc="images/blauwelichtjes.png"></button>
+        <button id="geenlichten" class="boombutton" data-id="lichtjes-geen"></button>
+
+        <form action="#" id="boomAfrondFormulier">
+          <label for="naam">Wat is je naam?</label>
+          <input type="text" name='naam' id='naam' required>
+          <button type="submit">Boompie is klaar! </button>
+        </form>
+
+      </div>
+
+
+      <div class="column">
+        <h2 id="jouwboom"> Jouw Boom </h2>
+
+        <img src="images/boomgroen.png" alt="kerstboom" id="boom-groen" class="versiering">
+        <img src="images/boomblauw.png" alt="kerstboom" id="boom-blauw" class="versiering">
+        <img src="images/boomrood.png" alt="kerstboom" id="boom-rood" class="versiering">
+
+
+        <img src="images/gelepiek.png" alt="gelepiek" id="piek-geel" class="versiering">
+        <img src="images/piekdonkerrood.png" alt="piekdonkerrood" id="piek-donkerrood" class="versiering">
+        <img src="images/grijzepiek.png" alt="piekgrijs" id="piek-grijs" class="versiering">
+
+        <img src="images/ballenroze.png" alt="ballenroze" id="ballen-roze" class="versiering">
+        <img src="images/ballenblauw.png" alt="ballenblauw" id="ballen-blauw" class="versiering">
+        <img src="images/ballenpaars.png" alt="ballenpaars" id="ballen-paars" class="versiering">
+
+        <img src="images/rodelichtjes.png" alt="rodelichtjes" id="lichtjes-rode" class="versiering">
+        <img src="images/grijzelichtjes.png" alt="grijzelichtjes" id="lichtjes-grijze" class="versiering">
+        <img src="images/blauwelichtjes.png" alt="blauwelichtjes" id="lichtjes-blauwe" class="versiering">
+
+        <img src="images/doos.png" id="doos" class="boombutton" alt="doos">
+      </div>
+
+
+    </section>
+
+
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </main>
+</body>
+
+</html>

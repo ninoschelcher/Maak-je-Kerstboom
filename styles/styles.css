@@ -1,0 +1,224 @@
+/* HTML */
+h1, h2, h3 {
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+/* Body */
+body {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+/* Header */
+body>header {
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+#boomversieringen {
+  display: flex;
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: center;
+}
+
+.column {
+  margin: 10px;
+  flex-grow: 1;
+}
+
+#boomversieringen .column:first-child {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+#boomversieringen h1 {
+  color: #000;
+}
+
+.column:first-child button:not(:last-child) {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+}
+
+/* Kerstversiering Kleuren */
+button:focus {
+  outline: 0;
+}
+
+#boomgroen {
+  display: block;
+}
+
+.column:first-child button#groeneboom {
+  background-color: #375927;
+}
+
+.column:first-child button#rodeboom {
+  background-color: #9B1F1F;
+}
+
+.column:first-child button#blauweboom {
+  background-color: #283375;
+}
+
+.column:first-child button#gelepiek {
+  background-color: #E1EA24;
+}
+
+.column:first-child button#rodepiek {
+  background-color: #782421;
+}
+
+.column:first-child button#zilverenpiek {
+  background-color: #E2D9DA;
+}
+
+.column:first-child button#rozebal {
+  background-color: #F8AAEF;
+}
+
+.column:first-child button#groenebal {
+  background-color: #24BB9C;
+}
+
+.column:first-child button#paarsebal {
+  background-color: #C5127F;
+}
+
+.column:first-child button#rodelichten {
+  background-color: #C92828;
+}
+
+.column:first-child button#wittelichten {
+  background-color: #EFF4F7;
+  border: 1px solid #000;
+}
+
+.column:first-child button#blauwelichten {
+  background-color: #03A7F6;
+}
+
+
+#boom-groen {
+  display: block;
+}
+
+img {
+  display: none;
+}
+
+img.aan {
+  display: block;
+  z-index: 999;
+}
+
+button#geenpiek, button#geenbal, button#geenlichten {
+  position: relative;
+}
+
+button#geenpiek::before, button#geenbal::before, button#geenlichten::before {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 900;
+  font-size: 40px;
+  top: 3px;
+  right: 11px;
+  color: grey;
+}
+
+#boomversieringen .column:last-child h2 {
+  position: absolute;
+  font-size: 2em;
+  right: 25%;
+  top: 10%;
+  color: #fff;
+}
+
+#boomversieringen .column:last-child img {
+  width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  right: 20%;
+  top: 20%;
+}
+
+#boomversieringen img#doos {
+    top: -70%;
+}
+
+#boomversieringen .column:last-child #welkomTekst {
+  color: #fff;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.5em;
+}
+
+/* Formulier aan het eind van de pagina */
+form#boomAfrondFormulier {
+  border-top: 2px solid #490013;
+  margin-top: 30px;
+}
+
+#boomAfrondFormulier button {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 40px;
+  font-family: "Montserrat";
+  border: none;
+  background-color: #490013;
+  color: #fff;
+  border-radius: 40px;
+}
+
+#boomAfrondFormulier input#naam {
+    padding: 10px 20px;
+    border-radius: 11px;
+    border: 1px solid #d1d1d1;
+}
+
+#boomAfrondFormulier label {
+  display: block;
+  margin: 30px 0 7px 0;
+  font-family: "Montserrat";
+}
+
+
+/* Css Animatie */
+@keyframes doosAnimatie{
+    0%{
+        }
+    100%{
+        transform: translateY(103%);
+        }
+}
+
+#boomversieringen img#doos{
+    animation: doosAnimatie 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* Media Queries om het enig sinds responsive te laten lijken */
+@media screen and (max-width: 1200px) {
+  #boomversieringen {
+    display: block;
+  }
+
+  #boomversieringen .column:last-child img {
+    top: auto;
+    right: 30%;
+  }
+}
